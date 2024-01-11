@@ -1,0 +1,23 @@
+.nav-component {
+  position: fixed;
+  top: 0;
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.nav-item-container {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+img {
+  width: 180px;
+}
