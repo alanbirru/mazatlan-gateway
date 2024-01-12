@@ -144,6 +144,8 @@ video {
 
   .hero-text {
     font-size: 26px;
+    text-align: center;
+    width: 90%;
   }
 
   .button-services {
@@ -160,6 +162,18 @@ video {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  .hero-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -240,5 +254,19 @@ video {
 
   .hero-component {
     height: 1000px;
+  }
+
+  video {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 5;
+  }
+
+  .degrees-num {
+    font-size: 100px;
   }
 }
