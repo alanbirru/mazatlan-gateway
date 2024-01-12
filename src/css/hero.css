@@ -18,7 +18,7 @@
 
 .hero-component {
   background-color: rgb(84, 123, 254);
-  height: 1200px;
+  height: 1700px;
 }
 
 .hero-items-container {
@@ -56,6 +56,7 @@
   font-weight: bold;
   color: black;
   transition: 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .button-services:hover {
@@ -73,14 +74,13 @@
 
 .weather-widget-container {
   background: rgba(0, 0, 0, 0.46);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.7px);
   -webkit-backdrop-filter: blur(12.7px);
   width: 90%;
   padding: 30px;
-  border-radius: 7px;
-  min-width: 250px;
+  border-radius: 40px;
+  min-width: 100px;
   max-width: 400px;
   color: white;
   display: flex;
@@ -112,7 +112,7 @@
   justify-content: flex-start;
 }
 video {
-  height: 1200px;
+  height: 1700px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -132,6 +132,59 @@ video {
 
 .min-max span {
   font-size: 27px;
+}
+
+.post-weather {
+  display: flex;
+  z-index: 20;
+  color: white;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+.post-card {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  gap: 17px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.text-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-cards {
+  background-color: #ffcd07;
+  width: 200px;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-image {
+  width: 150px;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.btn-cards:hover {
+  transform: scale(1.09);
 }
 
 @media only screen and (max-width: 1500px) {
@@ -175,6 +228,14 @@ video {
     justify-content: center;
     align-items: center;
   }
+
+  .hero-component {
+    height: 2000px;
+  }
+
+  video {
+    height: 2000px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -212,6 +273,14 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .degrees-num {
+    font-size: 180px;
+  }
+
+  .post-weather {
+    flex-direction: column;
   }
 }
 
@@ -253,20 +322,23 @@ video {
   }
 
   .hero-component {
-    height: 1000px;
+    height: 1900px;
   }
 
   video {
-    height: 1000px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: 5;
+    height: 1900px;
   }
 
   .degrees-num {
     font-size: 100px;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .btn-cards {
+    background-color: #ffcd07;
+    width: 100%;
   }
 }
