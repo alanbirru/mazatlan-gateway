@@ -7,7 +7,14 @@ import video from "../assets/Vfondo.mp4";
 export default function Hero() {
   return (
     <div className="hero-component">
-      <video autoPlay loop muted className="hero-video" loading="lazy">
+      <video
+        autoPlay
+        loop
+        muted
+        preload="none"
+        className="hero-video"
+        loading="lazy"
+      >
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

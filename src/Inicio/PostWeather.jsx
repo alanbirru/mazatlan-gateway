@@ -1,7 +1,7 @@
 import React from "react";
-import carnaval from "../assets/hero-Images/Carnaval.jpeg";
-import comida from "../assets/hero-Images/Comida2.png";
-import Estadio from "../assets/hero-Images/Estadio.jpeg";
+import carnaval from "../assets/hero-Images/Carnaval.webp";
+import comida from "../assets/hero-Images/Comida2.webp";
+import Estadio from "../assets/hero-Images/Estadio.webp";
 
 export default function PostWeather() {
   return (
