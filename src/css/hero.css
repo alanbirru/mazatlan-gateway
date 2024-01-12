@@ -1,0 +1,244 @@
+.hero-title-1 {
+  font-size: 65px;
+  display: inline;
+  margin-bottom: 0;
+  color: white;
+}
+.hero-title-2 {
+  font-size: 140px;
+  display: inline;
+  margin-bottom: 0;
+  color: #ffcd07;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-component {
+  background-color: rgb(84, 123, 254);
+  height: 100vh;
+}
+
+.hero-items-container {
+  padding-top: 240px;
+  width: 90%;
+  margin: auto;
+  z-index: 20;
+}
+.hero-text {
+  font-size: 35px;
+  width: 60%;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-text-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.button-services {
+  width: 300px;
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffcd07;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.button-services:hover {
+  transform: scale(1.2);
+}
+
+.hero-items-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+  z-index: 20;
+}
+
+.weather-widget-container {
+  background: rgba(0, 0, 0, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(12.7px);
+  width: 90%;
+  padding: 30px;
+  border-radius: 7px;
+  min-width: 250px;
+  max-width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.city-name {
+  text-align: center;
+  font-size: 38px;
+}
+
+.degrees-num {
+  font-weight: lighter;
+  box-sizing: content-box; /* Ensure box sizing includes only content */
+  display: inline-block; /* Set display property to inline-block */
+  width: auto; /* Let the width be automatically determined by the content */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  line-height: 1; /* Ensure the line height is normal */
+  font-size: 260px;
+}
+
+.degrees-num-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.weather-status {
+  font-size: 23px;
+}
+
+.min-max {
+  display: flex;
+  gap: 40px;
+}
+
+.min-max span {
+  font-size: 27px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .hero-title-1 {
+    font-size: 50px;
+  }
+  .hero-title-2 {
+    font-size: 100px;
+  }
+
+  .hero-text {
+    font-size: 26px;
+  }
+
+  .button-services {
+    width: 250px;
+    font-size: 25px;
+  }
+
+  .hero-items-container {
+    padding-top: 180px;
+    width: 90%;
+    margin: auto;
+  }
+  .hero-items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-title-1 {
+    font-size: 40px;
+  }
+  .hero-title-2 {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .button-services {
+    width: 250px;
+    font-size: 25px;
+  }
+
+  .hero-items-container {
+    padding-top: 180px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-title-1 {
+    font-size: 30px;
+  }
+  .hero-title-2 {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .button-services {
+    width: 250px;
+    font-size: 25px;
+  }
+
+  .hero-items-container {
+    padding-top: 180px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-component {
+    height: 1000px;
+  }
+}

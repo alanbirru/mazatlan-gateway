@@ -8,6 +8,7 @@
   padding: 30px;
   z-index: 10;
   transition: background-color 0.5s ease-in-out;
+  z-index: 60;
 }
 
 .transparent {
@@ -41,6 +42,10 @@
 
 .nav-ham {
   display: none;
+}
+
+.degrees-simbol {
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 1500px) {
