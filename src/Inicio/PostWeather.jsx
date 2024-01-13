@@ -1,7 +1,7 @@
 import React from "react";
 import carnaval from "../assets/hero-Images/Carnaval.webp";
 import comida from "../assets/hero-Images/Comida2.webp";
-import Estadio from "../assets/hero-Images/Estadio.webp";
+import estadio from "../assets/hero-Images/Estadio.webp";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -10,10 +10,13 @@ export default function PostWeather() {
     <div className="post-weather">
       <div className="post-card">
         <LazyLoadImage
-          src={Estadio}
-          alt="Estadio"
+          src={estadio}
+          alt="estadio"
           effect="blur"
           className="card-image"
+          height={200}
+          width={150}
+          placeholderSrc={estadio}
         />
 
         <div className="text-cards">
@@ -28,7 +31,15 @@ export default function PostWeather() {
       </div>
 
       <div className="post-card">
-        <img className="card-image" src={comida} alt="" loading="lazy" />
+        <LazyLoadImage
+          src={comida}
+          alt="comida"
+          effect="blur"
+          className="card-image"
+          height={200}
+          width={150}
+          placeholderSrc={comida}
+        />
 
         <div className="text-cards">
           <h3>Become a foodie</h3>
@@ -42,7 +53,15 @@ export default function PostWeather() {
       </div>
 
       <div className="post-card">
-        <img className="card-image" src={carnaval} alt="" loading="lazy" />
+        <LazyLoadImage
+          src={carnaval}
+          alt="carnaval"
+          effect="blur"
+          className="card-image"
+          height={200}
+          width={150}
+          placeholderSrc={carnaval}
+        />
 
         <div className="text-cards">
           <h3>Live the party</h3>
