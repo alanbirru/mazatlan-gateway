@@ -31,6 +31,10 @@ const WeatherWidget = () => {
         <p>{error}</p>
       ) : (
         <>
+          <img
+            src={`https://openweathermap.org/img/wn/${data.weather[0]?.icon}@2x.png`}
+            alt=""
+          />
           <h3 className="city-name">{data.name}</h3>
 
           <div className="degrees-num-container">
@@ -46,6 +50,7 @@ const WeatherWidget = () => {
             <span>Max: {data.main?.temp_max}</span>
             <span>Min: {data.main?.temp_min}</span>
           </div>
+
           {/* Add more data and UI elements as needed */}
         </>
       )}
