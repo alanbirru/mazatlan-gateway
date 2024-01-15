@@ -103,7 +103,7 @@
   padding: 0; /* Remove any padding */
   margin: 0; /* Remove any margin */
   line-height: 1; /* Ensure the line height is normal */
-  font-size: 260px;
+  font-size: 100px;
 }
 
 .degrees-num-container {
@@ -199,8 +199,9 @@ video {
 
 .carousel-container {
   width: 70%;
-  margin: auto;
-  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media only screen and (max-width: 1500px) {
   .hero-title-1 {
@@ -254,7 +255,8 @@ video {
   .carousel-container {
     width: 100%;
     margin: auto;
-    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -296,7 +298,7 @@ video {
   }
 
   .degrees-num {
-    font-size: 180px;
+    font-size: 120px;
   }
 
   .post-weather {
@@ -350,7 +352,7 @@ video {
   }
 
   .degrees-num {
-    font-size: 100px;
+    font-size: 60px;
   }
 
   .post-card {
@@ -368,6 +370,7 @@ video {
   .carousel-container {
     width: 70%;
     margin: auto;
-    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }

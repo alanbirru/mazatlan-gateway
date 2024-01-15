@@ -21,7 +21,6 @@ const Carousel = () => {
 
   return (
     <div>
-      <h1>Carousel</h1>
       <div className="carousel-container">
         <Swiper
           modules={[Pagination, Scrollbar, A11y, Autoplay]}
