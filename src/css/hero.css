@@ -187,6 +187,21 @@ video {
   transform: scale(1.09);
 }
 
+.carouselFotos {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: ease-in-out 0.3s;
+}
+.carouselFotos:hover {
+  transform: scale(1.1);
+}
+
+.carousel-container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
 @media only screen and (max-width: 1500px) {
   .hero-title-1 {
     font-size: 50px;
@@ -235,6 +250,11 @@ video {
 
   video {
     height: 2000px;
+  }
+  .carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
   }
 }
 
@@ -340,5 +360,14 @@ video {
   .btn-cards {
     background-color: #ffcd07;
     width: 100%;
+  }
+
+  .carouselFotos {
+    width: 250px;
+  }
+  .carousel-container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
   }
 }
