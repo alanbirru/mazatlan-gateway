@@ -183,6 +183,9 @@ video {
   border-radius: 30px;
 }
 
+.weather-icon {
+  width: 170px;
+}
 .btn-cards:hover {
   transform: scale(1.09);
 }
@@ -203,6 +206,7 @@ video {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 @media only screen and (max-width: 1500px) {
   .hero-title-1 {
     font-size: 50px;

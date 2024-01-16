@@ -3,6 +3,10 @@ import carnaval from "../assets/hero-Images/Carnaval.webp";
 import comida from "../assets/hero-Images/Comida2.webp";
 import estadio from "../assets/hero-Images/Estadio.webp";
 
+import lowresCarnaval from "../assets/placeholder/Carnaval.jpg";
+import lowresComida from "../assets/placeholder/Comida2.jpg";
+import lowresEstadio from "../assets/placeholder/Estadio.jpg";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function PostWeather() {
@@ -16,7 +20,7 @@ export default function PostWeather() {
           className="card-image"
           height={200}
           width={150}
-          placeholderSrc={estadio}
+          placeholderSrc={lowresEstadio}
         />
 
         <div className="text-cards">
@@ -38,7 +42,7 @@ export default function PostWeather() {
           className="card-image"
           height={200}
           width={150}
-          placeholderSrc={comida}
+          placeholderSrc={lowresComida}
         />
 
         <div className="text-cards">
@@ -60,7 +64,7 @@ export default function PostWeather() {
           className="card-image"
           height={200}
           width={150}
-          placeholderSrc={carnaval}
+          placeholderSrc={lowresCarnaval}
         />
 
         <div className="text-cards">

@@ -40,7 +40,12 @@ const Carousel = () => {
           {carouselFotos.map((foto, index) => {
             return (
               <SwiperSlide key={index}>
-                <img src={foto} alt="" className="carouselFotos" />
+                <img
+                  src={foto}
+                  alt=""
+                  className="carouselFotos"
+                  loading="lazy"
+                />
               </SwiperSlide>
             );
           })}
