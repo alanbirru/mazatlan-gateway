@@ -18,7 +18,7 @@
 
 .hero-component {
   background-color: rgb(84, 123, 254);
-  height: 1700px;
+  height: 1800px;
 }
 
 .hero-items-container {
@@ -112,7 +112,7 @@
   justify-content: flex-start;
 }
 video {
-  height: 1700px;
+  height: 1800px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -250,11 +250,11 @@ video {
   }
 
   .hero-component {
-    height: 2000px;
+    height: 2100px;
   }
 
   video {
-    height: 2000px;
+    height: 2100px;
   }
   .carousel-container {
     width: 100%;
@@ -308,6 +308,14 @@ video {
   .post-weather {
     flex-direction: column;
   }
+
+  .hero-component {
+    height: 2100px;
+  }
+
+  video {
+    height: 2100px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -348,11 +356,11 @@ video {
   }
 
   .hero-component {
-    height: 2100px;
+    height: 2150px;
   }
 
   video {
-    height: 2100px;
+    height: 2150px;
   }
 
   .degrees-num {
