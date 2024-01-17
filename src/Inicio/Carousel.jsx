@@ -3,6 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
@@ -15,6 +17,14 @@ import foto5 from "../assets/carousel-images/Foto_5.webp";
 import foto6 from "../assets/carousel-images/Foto_6.webp";
 import foto7 from "../assets/carousel-images/Foto_7.webp";
 import foto8 from "../assets/carousel-images/Foto_8.webp";
+
+import placehold2 from "../assets/placeholder/Foto_2.jpg";
+import placehold3 from "../assets/placeholder/Foto_3.jpg";
+import placehold4 from "../assets/placeholder/Foto_4.jpg";
+import placehold5 from "../assets/placeholder/Foto_5.jpg";
+import placehold6 from "../assets/placeholder/Foto_6.jpg";
+import placehold7 from "../assets/placeholder/Foto_7.jpg";
+import placehold8 from "../assets/placeholder/Foto_8.jpg";
 
 const Carousel = () => {
   const carouselFotos = [foto2, foto3, foto4, foto5, foto6, foto7, foto8];
@@ -37,18 +47,75 @@ const Carousel = () => {
             dynamicBullets: true,
           }}
         >
-          {carouselFotos.map((foto, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  src={foto}
-                  alt=""
-                  className="carouselFotos"
-                  loading="lazy"
-                />
-              </SwiperSlide>
-            );
-          })}
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto2}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold2}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto3}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold3}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto4}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold4}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto5}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold5}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto6}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold6}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto7}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold7}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <LazyLoadImage
+              src={foto8}
+              alt="carousel"
+              effect="blur"
+              className="carouselFotos"
+              placeholderSrc={placehold8}
+            />
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
