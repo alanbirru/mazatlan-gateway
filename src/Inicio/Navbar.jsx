@@ -11,13 +11,12 @@ export default function Navbar() {
 
   console.log(hamburgerOpen);
   const navItems = [
-    { name: "Shopping" },
+    { name: "Emergency numbers" },
     { name: "Food" },
     { name: "Activities" },
-    { name: "Blog" },
-    { name: "About us" },
-    { name: "Contact" },
-    { name: "Eng-Es" },
+    { name: "Health" },
+    { name: "Shopping" },
+    { name: "Directory" },
   ];
 
   useEffect(() => {

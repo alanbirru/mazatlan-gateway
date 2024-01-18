@@ -207,6 +207,33 @@ video {
   margin-bottom: 100px;
 }
 
+.youtube-video {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap-reverse;
+  font-size: 24px;
+}
+
+.youtube-text {
+  width: 400px;
+}
+
+.youtube-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.youtube-text span {
+  font-weight: bold;
+}
 @media only screen and (max-width: 1500px) {
   .hero-title-1 {
     font-size: 50px;
@@ -261,6 +288,10 @@ video {
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+
+  .section-video {
+    gap: 50px;
   }
 }
 
@@ -384,5 +415,11 @@ video {
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+
+  .youtube-video {
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
   }
 }

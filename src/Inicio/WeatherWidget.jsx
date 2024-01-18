@@ -3,7 +3,7 @@ import axios from "axios";
 
 const WeatherWidget = () => {
   const url =
-    "https://api.openweathermap.org/data/2.5/weather?q=mazatlan&appid=13e948614b7d48039d0589aec8ba8cdf";
+    "https://api.openweathermap.org/data/2.5/weather?q=mazatlan&units=Metric&appid=13e948614b7d48039d0589aec8ba8cdf";
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -39,8 +39,8 @@ const WeatherWidget = () => {
           <h3 className="city-name">{data.name}</h3>
 
           <div className="degrees-num-container">
-            <span className="degrees-num">{data.main?.temp}</span>
-            <span className="degrees-simbol">F</span>
+            <span className="degrees-num">{Math.floor(data.main?.temp)}</span>
+            <span className="degrees-simbol">°C</span>
           </div>
 
           <span className="weather-status">
@@ -48,8 +48,8 @@ const WeatherWidget = () => {
           </span>
 
           <div className="min-max">
-            <span>Max: {data.main?.temp_max}</span>
-            <span>Min: {data.main?.temp_min}</span>
+            <span>Max: {Math.floor(data.main?.temp_max)}</span>
+            <span>Min: {Math.floor(data.main?.temp_min)}</span>
           </div>
 
           {/* Add more data and UI elements as needed */}
