@@ -5,13 +5,13 @@ const SectionVideo = () => {
     <div className="section-video">
       <iframe
         className="youtube-video"
-        width="560"
-        height="315"
         src="https://www.youtube-nocookie.com/embed/bzBzbF0_VIM?si=r11WkCbXdd8I7x6S"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
+        width={1000}
+        height={600}
       />
       <div className="youtube-text">
         <h1>An awesome beach in Mexico</h1>

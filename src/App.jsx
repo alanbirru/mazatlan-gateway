@@ -8,8 +8,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <Carousel />
       <SectionVideo />
+      <Carousel />
     </div>
   );
 }
