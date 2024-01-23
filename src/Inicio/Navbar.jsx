@@ -5,7 +5,9 @@ import logo from "../assets/logo.png";
 import hamburger from "../assets/nav-icons/hamburger.png";
 import close from "../assets/nav-icons/close.png";
 
-export default function Navbar() {
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -38,7 +40,6 @@ export default function Navbar() {
   return (
     <div className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
       <img className="logo-navbar" src={logo} alt="" />
-
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>
         {navItems.map((navItem, index) => {
           return (
@@ -59,4 +60,6 @@ export default function Navbar() {
       />
     </div>
   );
-}
+};
+
+export default Navbar;

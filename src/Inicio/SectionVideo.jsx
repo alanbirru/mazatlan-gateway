@@ -7,11 +7,11 @@ const SectionVideo = () => {
         className="youtube-video"
         src="https://www.youtube-nocookie.com/embed/bzBzbF0_VIM?si=r11WkCbXdd8I7x6S"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
         width={1000}
         height={600}
+        allowFullScreen
       />
       <div className="youtube-text">
         <h1>An awesome beach in Mexico</h1>

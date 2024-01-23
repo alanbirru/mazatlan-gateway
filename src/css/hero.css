@@ -446,4 +446,9 @@ video {
   .youtube-video {
     height: 400px;
   }
+
+  .section-video {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
 }
