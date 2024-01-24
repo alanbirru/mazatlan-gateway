@@ -4,7 +4,6 @@ import "../css/navbar.css";
 import logo from "../assets/logo.png";
 import hamburger from "../assets/nav-icons/hamburger.png";
 import close from "../assets/nav-icons/close.png";
-
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -39,7 +38,9 @@ const Navbar = () => {
 
   return (
     <div className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
-      <img className="logo-navbar" src={logo} alt="" />
+      <Link to="/">
+        <img className="logo-navbar" src={logo} alt="" />
+      </Link>
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>
         {navItems.map((navItem, index) => {
           return (
