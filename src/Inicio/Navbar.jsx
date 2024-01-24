@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
-      <Link to="/">
+      <Link to="/mazatlan-gateway/">
         <img className="logo-navbar" src={logo} alt="" />
       </Link>
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>

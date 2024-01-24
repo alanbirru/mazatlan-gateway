@@ -19,13 +19,16 @@ function App() {
       <BotonWhats />
 
       <Routes>
-        <Route path="/" element={<PrincipalPage />} />
-        <Route path="/emergency-numbers" element={<EmergencyNumbers />} />
-        <Route path="/food" element={<Food />} />
-        <Route path="/activities" element={<Activities />} />
-        <Route path="/health" element={<Health />} />
-        <Route path="/shopping" element={<Shopping />} />
-        <Route path="/directory" element={<Directory />} />
+        <Route path="/mazatlan-gateway/" element={<PrincipalPage />} />
+        <Route
+          path="/mazatlan-gateway/emergency-numbers"
+          element={<EmergencyNumbers />}
+        />
+        <Route path="mazatlan-gateway/food" element={<Food />} />
+        <Route path="mazatlan-gateway/activities" element={<Activities />} />
+        <Route path="mazatlan-gateway/health" element={<Health />} />
+        <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
+        <Route path="maztlan-gateway/directory" element={<Directory />} />
       </Routes>
     </BrowserRouter>
   );
