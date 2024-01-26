@@ -4,6 +4,8 @@ import logo911 from "../assets/emergency-num-img/911.jpg";
 import contactoCiudadano from "../assets/emergency-num-img/contacto-ciudadano.png";
 import policiaEstatal from "../assets/emergency-num-img/policia-estatal.jpg";
 import policiaFederal from "../assets/emergency-num-img/policia-federal.jpg";
+import cruzRoja from "../assets/emergency-num-img/cruz-roja.jpg";
+import angelesVerdes from "../assets/emergency-num-img/angeles-verdes.jpg";
 
 const EmergencyNumbers = () => {
   const emergencyCards = [
@@ -32,6 +34,20 @@ const EmergencyNumbers = () => {
       img: policiaFederal,
       information:
         "If you are a victim or witness to a kidnapping or extortion in any of its modalities, you can make your complaint 24 hours a day, 365 days a year free of charge.",
+      number: "669 985 1451",
+      button: "More info",
+    },
+
+    {
+      img: cruzRoja,
+      information: "AV. Gral. Ignacio Zaragoza.",
+      number: "Phone: 088 or 11036000",
+      button: "More info",
+    },
+
+    {
+      img: cruzRoja,
+      information: "AV. Gral. Ignacio Zaragoza.",
       number: "Phone: 088 or 11036000",
       button: "More info",
     },

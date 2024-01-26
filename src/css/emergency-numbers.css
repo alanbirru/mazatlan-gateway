@@ -1,3 +1,9 @@
+:root {
+  --primary-color: rgb(84, 123, 254);
+  --box-shadow-light: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --box-shadow-dark: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .card-emergency-container {
   display: flex;
   flex-direction: column;
@@ -11,6 +17,7 @@
   max-width: 500px;
   border-radius: 50px;
 }
+
 .card-emergency-numbers {
   display: flex;
   align-items: center;
@@ -18,18 +25,18 @@
   padding: 30px;
   border-radius: 10px;
   gap: 40px;
-
   width: 1000px;
   justify-content: start;
-  align-items: center;
-  border-right: 8px solid rgb(84, 123, 254);
+  border-right: 8px solid var(--primary-color);
   transition: 0.2s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow-light);
 }
+
 .card-emergency-numbers:hover {
   transform: scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--box-shadow-dark);
 }
+
 .text-emergency {
   display: flex;
   flex-direction: column;
@@ -50,15 +57,17 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
 .text-emergency button:hover {
   background-color: #ffcd07;
+  transition: background-color 0.2s ease-in-out;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1000px) {
   .card-emergency-numbers {
-    width: 100%;
     flex-direction: column;
+    width: 100%;
   }
 
   .card-emergency-numbers img {
@@ -66,6 +75,7 @@
     border-radius: 8px;
     min-width: 250px;
   }
+
   .card-emergency-container {
     width: 80%;
   }

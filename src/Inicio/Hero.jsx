@@ -6,7 +6,7 @@ import video from "../assets/Vfondo.mp4";
 
 export default function Hero() {
   return (
-    <div className="hero-component">
+    <header className="hero-component">
       <video
         autoPlay
         loop
@@ -40,6 +40,6 @@ export default function Hero() {
 
         <WeatherWidget />
       </div>
-    </div>
+    </header>
   );
 }

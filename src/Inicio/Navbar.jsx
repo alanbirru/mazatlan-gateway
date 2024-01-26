@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
+    <nav className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
       <Link to="/mazatlan-gateway/">
         <img className="logo-navbar" src={logo} alt="" />
       </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
         alt="hamburger"
         onClick={() => setHamburgerOpen(!hamburgerOpen)}
       />
-    </div>
+    </nav>
   );
 };
 
