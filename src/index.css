@@ -9,6 +9,9 @@ body {
   background-color: #f0f0f0;
 }
 
+p {
+  font-size: 23px;
+}
 .whatsBtn {
   width: 65px;
   position: fixed;

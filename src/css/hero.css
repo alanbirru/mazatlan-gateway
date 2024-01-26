@@ -17,7 +17,7 @@
 }
 
 .hero-component {
-  background-color: rgb(84, 123, 254);
+  background-color: #272727;
   height: 1800px;
 }
 
@@ -73,8 +73,8 @@
 }
 
 .weather-widget-container {
-  background: rgba(0, 0, 0, 0.46);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: #00000075;
+  box-shadow: 0 4px 30px #0000001a;
   backdrop-filter: blur(12.7px);
   -webkit-backdrop-filter: blur(12.7px);
   width: 90%;
@@ -159,7 +159,9 @@ video {
   gap: 17px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.post-card p {
+  font-size: 20 px;
+}
 .text-cards {
   display: flex;
   flex-direction: column;

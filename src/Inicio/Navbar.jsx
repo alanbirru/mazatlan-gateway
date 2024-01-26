@@ -12,12 +12,12 @@ const Navbar = () => {
 
   console.log(hamburgerOpen);
   const navItems = [
-    { name: "Emergency numbers" },
-    { name: "Food" },
-    { name: "Activities" },
-    { name: "Health" },
-    { name: "Shopping" },
-    { name: "Directory" },
+    { name: "Emergency numbers", id: "emergency-numbers" },
+    { name: "Food", id: "food" },
+    { name: "Activities", id: "activities" },
+    { name: "Health", id: "health" },
+    { name: "Shopping", id: "shopping" },
+    { name: "Directory", id: "directory" },
   ];
 
   useEffect(() => {
@@ -44,11 +44,11 @@ const Navbar = () => {
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>
         {navItems.map((navItem, index) => {
           return (
-            <a href="#">
+            <Link to={`mazatlan-gateway/${navItem.id}`}>
               <li key={index} className="nav-item">
                 {navItem.name}
               </li>
-            </a>
+            </Link>
           );
         })}
       </ul>

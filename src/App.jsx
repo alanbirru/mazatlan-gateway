@@ -1,7 +1,9 @@
 import Navbar from "./Inicio/Navbar";
 import BotonWhats from "./boton/BotonWhats";
+import { useEffect } from "react";
 
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import {
   Activities,
   EmergencyNumbers,
@@ -10,14 +12,19 @@ import {
   PrincipalPage,
   Shopping,
   Directory,
+  NotFound,
 } from "./Sections";
 
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <BrowserRouter>
+    <div>
       <Navbar />
       <BotonWhats />
-
       <Routes>
         <Route path="/mazatlan-gateway/" element={<PrincipalPage />} />
         <Route
@@ -28,9 +35,10 @@ function App() {
         <Route path="mazatlan-gateway/activities" element={<Activities />} />
         <Route path="mazatlan-gateway/health" element={<Health />} />
         <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
-        <Route path="maztlan-gateway/directory" element={<Directory />} />
+        <Route path="mazatlan-gateway/directory" element={<Directory />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
