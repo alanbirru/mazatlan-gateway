@@ -10,7 +10,10 @@ const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
-  console.log(hamburgerOpen);
+  const closeMenu = () => {
+    return hamburgerOpen(false);
+  };
+
   const navItems = [
     { name: "Emergency numbers", id: "emergency-numbers" },
     { name: "Food", id: "food" },
@@ -44,7 +47,7 @@ const Navbar = () => {
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>
         {navItems.map((navItem, index) => {
           return (
-            <Link to={`mazatlan-gateway/${navItem.id}`}>
+            <Link to={`mazatlan-gateway/${navItem.id}`} onClick={closeMenu}>
               <li key={index} className="nav-item">
                 {navItem.name}
               </li>

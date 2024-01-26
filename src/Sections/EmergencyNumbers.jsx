@@ -42,14 +42,14 @@ const EmergencyNumbers = () => {
       <div className="card-emergency-container">
         {emergencyCards.map((card) => {
           return (
-            <div className="card-emergency-numbers">
+            <article className="card-emergency-numbers">
               <img src={card.img} alt="card" />
               <div className="text-emergency">
                 <p>{card.information}</p>
                 <span>{card.number}</span>
                 <button>{card.button}</button>
               </div>
-            </div>
+            </article>
           );
         })}
       </div>
