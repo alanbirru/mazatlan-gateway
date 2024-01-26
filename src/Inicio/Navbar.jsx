@@ -11,7 +11,7 @@ const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
 
   const closeMenu = () => {
-    return hamburgerOpen(false);
+    return setHamburgerOpen(false);
   };
 
   const navItems = [
@@ -42,13 +42,13 @@ const Navbar = () => {
   return (
     <nav className={`nav-component ${scrolling ? "colored" : "transparent"}`}>
       <Link to="/mazatlan-gateway/">
-        <img className="logo-navbar" src={logo} alt="" />
+        <img className="logo-navbar" src={logo} alt="" onClick={closeMenu} />
       </Link>
       <ul className={`nav-item-container ${hamburgerOpen ? "show" : "hidden"}`}>
         {navItems.map((navItem, index) => {
           return (
-            <Link to={`mazatlan-gateway/${navItem.id}`} onClick={closeMenu}>
-              <li key={index} className="nav-item">
+            <Link to={`mazatlan-gateway/${navItem.id}`}>
+              <li key={index} className="nav-item" onClick={closeMenu}>
                 {navItem.name}
               </li>
             </Link>
