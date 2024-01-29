@@ -1,6 +1,40 @@
 :root {
-  --primary-color: rgb(84, 123, 254);
+  --primary-color: #0a6799;
   --box-shadow-dark: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --secundary-color: #467580;
+}
+/* Section Style */
+#emergency-numbers,
+#directory,
+#activities {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.container {
+  width: 90%; /* Adjust as needed */
+  max-width: 1030px; /* Adjust as needed */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  line-height: 2;
+  margin-bottom: 85px;
+}
+
+.container p {
+  color: var(--secundary-color);
+}
+
+/* Cards Syles */
+.section-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 1.3;
 }
 
 .card-emergency-container {
@@ -13,8 +47,8 @@
 }
 
 .card-emergency-numbers img {
-  max-width: 500px;
-  border-radius: 50px;
+  max-width: 300px;
+  border-radius: 20px;
 }
 
 .card-emergency-numbers {
@@ -40,6 +74,11 @@
 .text-emergency span {
   font-weight: bold;
   font-size: 25px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+
+  border-radius: 15px;
 }
 
 .text-emergency button {

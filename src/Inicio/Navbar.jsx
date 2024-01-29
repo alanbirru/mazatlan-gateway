@@ -15,12 +15,13 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "Emergency numbers", id: "emergency-numbers" },
     { name: "Food", id: "food" },
     { name: "Activities", id: "activities" },
     { name: "Health", id: "health" },
     { name: "Shopping", id: "shopping" },
     { name: "Directory", id: "directory" },
+    { name: "Emergency numbers", id: "emergency-numbers" },
+    { name: "Contact", id: "contact" },
   ];
 
   useEffect(() => {
