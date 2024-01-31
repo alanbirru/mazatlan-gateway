@@ -13,7 +13,7 @@ p {
   font-size: 30px;
 }
 .whatsBtn {
-  width: 65px;
+  width: 85px;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -24,4 +24,10 @@ p {
 
 .whatsBtn:hover {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .whatsBtn {
+    width: 60px;
+  }
 }
