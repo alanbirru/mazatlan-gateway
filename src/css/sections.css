@@ -3,10 +3,14 @@
   --box-shadow-dark: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --secundary-color: #467580;
 }
+
 /* Section Style */
 #emergency-numbers,
 #directory,
-#activities {
+#activities,
+#food,
+#health,
+#contact {
   margin-top: 200px;
   margin-bottom: 200px;
 }
@@ -21,7 +25,7 @@
   align-items: center;
   margin: auto;
   gap: 50px;
-  line-height: 2;
+  line-height: 1.6;
   margin-bottom: 85px;
 }
 
@@ -32,7 +36,6 @@
 /* Cards Syles */
 .section-title {
   color: var(--primary-color);
-  font-weight: bold;
   font-size: 55px;
   line-height: 1.3;
 }
@@ -69,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  font-size: 26px;
 }
 
 .text-emergency span {
@@ -97,6 +101,10 @@
   transition: background-color 0.2s ease-in-out;
 }
 
+.text-emergency p {
+  font-size: 25px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1000px) {
   .card-emergency-numbers {
@@ -112,5 +120,23 @@
 
   .card-emergency-container {
     width: 80%;
+  }
+
+  .section-title {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+
+  .container p {
+    font-size: 25px;
+  }
+
+  #emergency-numbers,
+  #directory,
+  #activities,
+  #food,
+  #health {
+    margin-top: 170px;
+    margin-bottom: 170px;
   }
 }

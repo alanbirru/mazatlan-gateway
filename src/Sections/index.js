@@ -6,3 +6,4 @@ export { default as Health } from "./Health";
 export { default as Shopping } from "./Shopping";
 export { default as PrincipalPage } from "./PrincipalPage";
 export { default as NotFound } from "./NotFound";
+export { default as Contact } from "./Contact";

@@ -1,11 +1,12 @@
 import React from "react";
 
-const Health = () => {
+const Contact = () => {
   return (
-    <section id="health">
+    <section id="contact">
       <div className="container">
         <h1 className="section-title">
-          Mazatlán Health and Wellness directory
+          Welcome to Mazatlán's Marketplace: Your Ultimate Directory for Every
+          Need
         </h1>
 
         <div>
@@ -20,4 +21,4 @@ const Health = () => {
   );
 };
 
-export default Health;
+export default Contact;

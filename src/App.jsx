@@ -13,6 +13,7 @@ import {
   Shopping,
   Directory,
   NotFound,
+  Contact,
 } from "./Sections";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="mazatlan-gateway/health" element={<Health />} />
         <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
         <Route path="mazatlan-gateway/directory" element={<Directory />} />
+        <Route path="mazatlan-gateway/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
