@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Food = () => {
   return (
-    <section id="food">
+    <motion.section
+      id="food"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <h1 className="section-title">
           Welcome to Mazatlan Gateway Food Section – your ultimate guide to the
@@ -47,7 +53,7 @@ const Food = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

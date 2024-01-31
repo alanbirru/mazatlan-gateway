@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Health = () => {
   return (
-    <section id="health">
+    <motion.section
+      id="health"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <h1 className="section-title">
           Mazatlán Health and Wellness directory
@@ -16,7 +22,7 @@ const Health = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -14,9 +14,14 @@ import {
   Directory,
   NotFound,
   Contact,
+  Blog,
 } from "./Sections";
 
+import { AnimatePresence } from "framer-motion";
+
 function App() {
+  const location = useLocation();
+
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,20 +31,24 @@ function App() {
     <div>
       <Navbar />
       <BotonWhats />
-      <Routes>
-        <Route path="/mazatlan-gateway/" element={<PrincipalPage />} />
-        <Route
-          path="/mazatlan-gateway/emergency-numbers"
-          element={<EmergencyNumbers />}
-        />
-        <Route path="mazatlan-gateway/food" element={<Food />} />
-        <Route path="mazatlan-gateway/activities" element={<Activities />} />
-        <Route path="mazatlan-gateway/health" element={<Health />} />
-        <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
-        <Route path="mazatlan-gateway/directory" element={<Directory />} />
-        <Route path="mazatlan-gateway/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/mazatlan-gateway/" element={<PrincipalPage />} />
+          <Route
+            path="/mazatlan-gateway/emergency-numbers"
+            element={<EmergencyNumbers />}
+          />
+          <Route path="mazatlan-gateway/food" element={<Food />} />
+          <Route path="mazatlan-gateway/activities" element={<Activities />} />
+          <Route path="mazatlan-gateway/health" element={<Health />} />
+          <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
+          <Route path="mazatlan-gateway/directory" element={<Directory />} />
+          <Route path="mazatlan-gateway/contact" element={<Contact />} />
+          <Route path="mazatlan-gateway/blog" element={<Blog />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }

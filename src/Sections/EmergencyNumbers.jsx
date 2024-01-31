@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/sections.css";
+import { motion } from "framer-motion";
 
 import logo911 from "../assets/emergency-num-img/911.jpg";
 import contactoCiudadano from "../assets/emergency-num-img/contacto-ciudadano.png";
@@ -10,6 +11,7 @@ import angelesVerdes from "../assets/emergency-num-img/angeles-verdes.jpg";
 import policiaTransito from "../assets/emergency-num-img/policia-transito.jpg";
 import traffic from "../assets/emergency-num-img/traffic.jpg";
 import chicken from "../assets/emergency-num-img/chicken.jpg";
+import bus from "../assets/emergency-num-img/bus.jpg";
 
 const EmergencyNumbers = () => {
   const copyToClipboard = (phoneNumber) => {
@@ -83,7 +85,12 @@ const EmergencyNumbers = () => {
   ];
 
   return (
-    <section id="emergency-numbers">
+    <motion.section
+      id="emergency-numbers"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <h1 className="section-title">
           Welcome To Mazatlan, There Is Some Juicy Details Comin' Your Way!
@@ -114,7 +121,7 @@ const EmergencyNumbers = () => {
         </div>
 
         <div>
-          <img src={traffic} alt="traffic" />
+          <img src={bus} alt="traffic" />
           <p>
             The way to stop a bus is to wave to then and they stop. Or at very
             intermittent bus stops. The way to get off, is to know where you are
@@ -148,7 +155,7 @@ const EmergencyNumbers = () => {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

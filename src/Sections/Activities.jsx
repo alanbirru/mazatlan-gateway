@@ -1,7 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 const Activities = () => {
   return (
-    <section id="activities">
+    <motion.section
+      id="activities"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <h1 className="section-title">
           Embrace the Spirit of Mazatlán: Unleash Your Adventure
@@ -32,7 +38,7 @@ const Activities = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

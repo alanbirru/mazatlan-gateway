@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Directory = () => {
   return (
-    <section id="directory">
+    <motion.section
+      id="directory"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container">
         <h1 className="section-title">
           Welcome to Mazatlán's Marketplace: Your Ultimate Directory for Every
@@ -42,7 +48,7 @@ const Directory = () => {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

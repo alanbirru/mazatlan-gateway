@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 
-const Shopping = () => {
+motion;
+
+const Blog = () => {
   return (
     <motion.section
-      id="shopping"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      Shopping
+      Blog
     </motion.section>
   );
 };
 
-export default Shopping;
+export default Blog;

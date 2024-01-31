@@ -21,6 +21,7 @@ const Navbar = () => {
     { name: "Shopping", id: "shopping" },
     { name: "Directory", id: "directory" },
     { name: "Contact", id: "contact" },
+    { name: "blog", id: "blog" },
   ];
 
   // useEffect(() => {
