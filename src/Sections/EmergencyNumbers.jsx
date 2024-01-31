@@ -8,6 +8,8 @@ import policiaFederal from "../assets/emergency-num-img/policia-federal.jpg";
 import cruzRoja from "../assets/emergency-num-img/cruz-roja.jpg";
 import angelesVerdes from "../assets/emergency-num-img/angeles-verdes.jpg";
 import policiaTransito from "../assets/emergency-num-img/policia-transito.jpg";
+import traffic from "../assets/emergency-num-img/traffic.jpg";
+import chicken from "../assets/emergency-num-img/chicken.jpg";
 
 const EmergencyNumbers = () => {
   const copyToClipboard = (phoneNumber) => {
@@ -88,6 +90,7 @@ const EmergencyNumbers = () => {
         </h1>
 
         <div>
+          <img src={traffic} alt="traffic" />
           <p>
             Ready to see the sights? Just remember, when it comes to sharing
             the,{" "}
@@ -100,6 +103,7 @@ const EmergencyNumbers = () => {
         </div>
 
         <div>
+          <img src={chicken} alt="traffic" />
           <p>
             Regarding buses in Mazatlán. You can tell where they are going by
             the names written on their windshields. There two types of busses,
@@ -110,6 +114,7 @@ const EmergencyNumbers = () => {
         </div>
 
         <div>
+          <img src={traffic} alt="traffic" />
           <p>
             The way to stop a bus is to wave to then and they stop. Or at very
             intermittent bus stops. The way to get off, is to know where you are
