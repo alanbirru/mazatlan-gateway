@@ -35,21 +35,23 @@ const Contact = () => {
         </div>
       </div>
 
-      <form>
+      <form className="contact-form">
         <div>
-          <label htmlFor="">Name</label>
-          <input type="text" />
+          <label htmlFor="user_name">Name</label>
+          <input type="text" id="user_name" name="user_name" required />
         </div>
 
         <div>
-          <label htmlFor="">Email</label>
-          <input type="text" />
+          <label htmlFor="user_email">Email</label>
+          <input type="email" id="user_email" name="user_email" />
         </div>
 
-        <div>
-          <label htmlFor="">Message</label>
-          <input type="text" />
+        <div className="message-field">
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" rows="6" cols="40" />
         </div>
+
+        <input type="submit" value="Submit" className="submit-btn" required />
       </form>
     </motion.section>
   );
