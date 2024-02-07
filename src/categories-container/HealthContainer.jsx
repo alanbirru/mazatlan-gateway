@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import "../css/healthCategories.css";
 
 import ambulanceImage from "../assets/health-categories-images/ambulance-img.jpg";
 import chiropractorsImage from "../assets/health-categories-images/chiropractors-img.jpg";
 import clinicsImage from "../assets/health-categories-images/clinics-img.jpg";
 import dentistsImage from "../assets/health-categories-images/dentists-img.jpg";
-import GeneralDoctors from "../assets/health-categories-images/dentists-img.jpg";
+import dermatologistsImage from "../assets/health-categories-images/dermatologists-img.jpg";
+import GeneralDoctorsImage from "../assets/health-categories-images/dentists-img.jpg";
 import hostpitalsImg from "../assets/health-categories-images/hospitals-img.jpg";
 import nailCareImg from "../assets/health-categories-images/nail-care-img.jpg";
 import naturopathImg from "../assets/health-categories-images/naturopath-img.jpg";
@@ -16,28 +18,47 @@ import physiotherapyImg from "../assets/health-categories-images/physiotherapy-i
 
 const HealthContainer = () => {
   const categoriesCards = [
-    { title: "Ambulance", id: "ambulance", image: "" },
-    { title: "Chiropractors", id: "chiropractors", image: "" },
-    { title: "Clinics", id: "clinics", image: "" },
-    { title: "Dentists", id: "dentists", image: "" },
-    { title: "Dermatologists", id: "dermatologists", image: "" },
-    { title: "General Doctors", id: "general-doctors", image: "" },
-    { title: "Hospitals", id: "hospitals", image: "" },
-    { title: "Massage And Nail Care", id: "hospitals", image: "" },
-    { title: "Naturopath", id: "naturopath", image: "" },
-    { title: "Opticans", id: "opticans", image: "" },
-    { title: "Optometrists", id: "optometrists", image: "" },
-    { title: "Pediatrician", id: "pediatrician", image: "" },
-    { title: "Pharmacy", id: "pediatrician", image: "" },
-    { title: "Physiotherapy", id: "physiotherapy", image: "" },
+    { title: "Ambulance", id: "ambulance", image: ambulanceImage },
+    { title: "Chiropractors", id: "chiropractors", image: chiropractorsImage },
+    { title: "Clinics", id: "clinics", image: clinicsImage },
+    { title: "Dentists", id: "dentists", image: dentistsImage },
+    {
+      title: "Dermatologists",
+      id: "dermatologists",
+      image: dermatologistsImage,
+    },
+    {
+      title: "General Doctors",
+      id: "general-doctors",
+      image: GeneralDoctorsImage,
+    },
+    { title: "Hospitals", id: "hospitals", image: hostpitalsImg },
+    {
+      title: "Massage And Nail Care",
+      id: "massage-and-nail-care",
+      image: nailCareImg,
+    },
+    { title: "Naturopath", id: "naturopath", image: naturopathImg },
+    { title: "Opticans", id: "opticans", image: opticiansImg },
+    { title: "Optometrists", id: "optometrists", image: optometristImg },
+    { title: "Pediatrician", id: "pediatrician", image: pedatricianImg },
+    { title: "Pharmacy", id: "pediatrician", image: pharmacyImg },
+    { title: "Physiotherapy", id: "physiotherapy", image: physiotherapyImg },
   ];
 
   return (
-    <div>
+    <div className="health-categorie-container">
       {categoriesCards.map((card) => {
         return (
           <Link to={card.id}>
-            <div>
+            <div
+              className="health-categorie"
+              style={{
+                backgroundImage: `url(${card.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <h2>{card.title}</h2>
             </div>
           </Link>
