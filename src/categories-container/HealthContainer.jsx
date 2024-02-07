@@ -51,15 +51,19 @@ const HealthContainer = () => {
       {categoriesCards.map((card) => {
         return (
           <Link to={card.id}>
-            <div
-              className="health-categorie"
-              style={{
-                backgroundImage: `url(${card.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <h2>{card.title}</h2>
+            <div className="image-container">
+              <div
+                className="health-categorie"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${card.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div>
+                  <h1>{card.title}</h1>
+                </div>
+              </div>
             </div>
           </Link>
         );

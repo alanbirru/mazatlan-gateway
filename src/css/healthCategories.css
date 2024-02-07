@@ -5,9 +5,10 @@
 .health-categorie {
   width: 500px;
   height: 500px;
-  border-radius: 10px;
+
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.3s ease-in-out;
 }
 
 .health-categorie-container {
@@ -16,4 +17,27 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.health-categorie h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.health-categorie:hover {
+  transform: scale(1.2); /* Scale the black filter to show on hover */
 }
