@@ -6,7 +6,7 @@ import chiropractorsImage from "../assets/health-categories-images/chiropractors
 import clinicsImage from "../assets/health-categories-images/clinics-img.jpg";
 import dentistsImage from "../assets/health-categories-images/dentists-img.jpg";
 import dermatologistsImage from "../assets/health-categories-images/dermatologists-img.jpg";
-import GeneralDoctorsImage from "../assets/health-categories-images/dentists-img.jpg";
+import GeneralDoctorsImage from "../assets/health-categories-images/general-doctors.jpg";
 import hostpitalsImg from "../assets/health-categories-images/hospitals-img.jpg";
 import nailCareImg from "../assets/health-categories-images/nail-care-img.jpg";
 import naturopathImg from "../assets/health-categories-images/naturopath-img.jpg";
