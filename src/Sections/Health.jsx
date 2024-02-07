@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import HealthContainer from "../categories-container/HealthContainer";
 
 const Health = () => {
   return (
@@ -22,6 +23,7 @@ const Health = () => {
           </p>
         </div>
       </div>
+      <HealthContainer />
     </motion.section>
   );
 };

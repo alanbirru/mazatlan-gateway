@@ -1,0 +1,13 @@
+export { default as Ambulance } from "./Ambulance";
+export { default as Chiropractors } from "./Chiropractors";
+export { default as Clinics } from "./Clinics";
+export { default as Dentists } from "./Dentists";
+export { default as Dertamologists } from "./Dermatologists";
+export { default as GeneralDoctors } from "./GeneralDoctors";
+export { default as Hospitals } from "./Hospitals";
+export { default as MassageAndNailCare } from "./MassageAndNailCare";
+export { default as Naturopath } from "./Naturopath";
+export { default as Optometrists } from "./Optometrists";
+export { default as Pharmacy } from "./Pharmacy";
+export { default as Physiotherapy } from "./Physiotherapy";
+export { default as Pediatrician } from "./Pediatrician";

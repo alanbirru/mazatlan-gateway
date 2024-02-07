@@ -11,9 +11,26 @@ import {
   Blog,
 } from "./Sections";
 
+import {
+  Ambulance,
+  Chiropractors,
+  Clinics,
+  Dentists,
+  Dertamologists,
+  GeneralDoctors,
+  Hospitals,
+  MassageAndNailCare,
+  Naturopath,
+  Optometrists,
+  Pharmacy,
+  Physiotherapy,
+  Pediatrician,
+} from "./health-categories";
+
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import Opticians from "./health-categories/Opticians";
 
 const SectionRoutes = () => {
   const location = useLocation();
@@ -45,23 +62,23 @@ const SectionRoutes = () => {
 
         <Route path="mazatlan-gateway/health">
           <Route index element={<Health />} />
-          <Route path="ambulance" element={<h1>ambulance</h1>} />
-          <Route path="chiropractors" element={<h1>chiropractors</h1>} />
-          <Route path="clinics" element={<h1>clinics</h1>} />
-          <Route path="dentists" element={<h1>dentists</h1>} />
-          <Route path="dermatologists" element={<h1>dermatologists</h1>} />
-          <Route path="general-doctors" element={<h1>General Doctors</h1>} />
-          <Route path="hospitals" element={<h1>hospitals</h1>} />
+          <Route path="ambulance" element={<Ambulance />} />
+          <Route path="chiropractors" element={<Chiropractors />} />
+          <Route path="clinics" element={<Clinics />} />
+          <Route path="dentists" element={<Dentists />} />
+          <Route path="dermatologists" element={<Dertamologists />} />
+          <Route path="general-doctors" element={<GeneralDoctors />} />
+          <Route path="hospitals" element={<Hospitals />} />
           <Route
             path="massage-and-nail-care"
-            element={<h1>massage-and-nail-care</h1>}
+            element={<MassageAndNailCare />}
           />
-          <Route path="naturopath" element={<h1>naturopath</h1>} />
-          <Route path="pediatrician" element={<h1>pediatrician</h1>} />
-          <Route path="physiotherapy" element={<h1>physiotherapy</h1>} />
-          <Route path="opticians" element={<h1>opticians</h1>} />
-          <Route path="optometrists" element={<h1>opticians</h1>} />
-          <Route path="Pharmacy" element={<h1>opticians</h1>} />
+          <Route path="naturopath" element={<Naturopath />} />
+          <Route path="physiotherapy" element={<Physiotherapy />} />
+          <Route path="opticians" element={<Opticians />} />
+          <Route path="optometrists" element={<Optometrists />} />
+          <Route path="pharmacy" element={<Pharmacy />} />
+          <Route path="pediatrician" element={<Pediatrician />} />
         </Route>
 
         <Route path="mazatlan-gateway/shopping" element={<Shopping />} />
