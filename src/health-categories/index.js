@@ -8,6 +8,7 @@ export { default as Hospitals } from "./Hospitals";
 export { default as MassageAndNailCare } from "./MassageAndNailCare";
 export { default as Naturopath } from "./Naturopath";
 export { default as Optometrists } from "./Optometrists";
+export { default as Opticians } from "./Opticians";
 export { default as Pharmacy } from "./Pharmacy";
 export { default as Physiotherapy } from "./Physiotherapy";
 export { default as Pediatrician } from "./Pediatrician";

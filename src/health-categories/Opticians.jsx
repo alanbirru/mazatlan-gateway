@@ -1,5 +1,5 @@
 const Opticians = () => {
-  return <div id="opticians">Opticians</div>;
+  return <div id="opticians"></div>;
 };
 
 export default Opticians;

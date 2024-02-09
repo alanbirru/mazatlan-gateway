@@ -22,6 +22,7 @@ import {
   MassageAndNailCare,
   Naturopath,
   Optometrists,
+  Opticians,
   Pharmacy,
   Physiotherapy,
   Pediatrician,
@@ -30,7 +31,6 @@ import {
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Opticians from "./health-categories/Opticians";
 
 const SectionRoutes = () => {
   const location = useLocation();
