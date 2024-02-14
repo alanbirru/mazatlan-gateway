@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 import "../css/healthCategories.css";
 
-import ambulanceImage from "../assets/health-categories-images/ambulance-img.jpg";
-import chiropractorsImage from "../assets/health-categories-images/chiropractors-img.jpg";
-import clinicsImage from "../assets/health-categories-images/clinics-img.jpg";
-import dentistsImage from "../assets/health-categories-images/dentists-img.jpg";
-import dermatologistsImage from "../assets/health-categories-images/dermatologists-img.jpg";
-import GeneralDoctorsImage from "../assets/health-categories-images/general-doctors.jpg";
-import hostpitalsImg from "../assets/health-categories-images/hospitals-img.jpg";
-import nailCareImg from "../assets/health-categories-images/nail-care-img.jpg";
-import naturopathImg from "../assets/health-categories-images/naturopath-img.jpg";
-import opticiansImg from "../assets/health-categories-images/opticians-img.jpg";
-import optometristImg from "../assets/health-categories-images/opticians-img.jpg";
-import pedatricianImg from "../assets/health-categories-images/pedatrician-img.jpg";
-import pharmacyImg from "../assets/health-categories-images/pharmacy-img.jpg";
-import physiotherapyImg from "../assets/health-categories-images/physiotherapy-img.jpg";
+import ambulanceImage from "../assets/health-categories-cards/ambulance-img.webp";
+import chiropractorsImage from "../assets/health-categories-cards/chiropractors-img.webp";
+import clinicsImage from "../assets/health-categories-cards/clinics-img.webp";
+import dentistsImage from "../assets/health-categories-cards/dentists-img.webp";
+import dermatologistsImage from "../assets/health-categories-cards/dermatologists-img.webp";
+import GeneralDoctorsImage from "../assets/health-categories-cards/general-doctors.webp";
+import hostpitalsImg from "../assets/health-categories-cards/hospitals-img.webp";
+import nailCareImg from "../assets/health-categories-cards/nail-care-img.webp";
+import naturopathImg from "../assets/health-categories-cards/naturopath-img.webp";
+import opticiansImg from "../assets/health-categories-cards/opticians-img.webp";
+import optometristImg from "../assets/health-categories-cards/optometrists.webp";
+import pedatricianImg from "../assets/health-categories-cards/pedatrician-img.webp";
+import pharmacyImg from "../assets/health-categories-cards/pharmacy-img.webp";
+import physiotherapyImg from "../assets/health-categories-cards/physiotherapy-img.webp";
 
 const HealthContainer = () => {
   const categoriesCards = [
