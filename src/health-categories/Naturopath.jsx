@@ -1,13 +1,25 @@
 const Naturopath = () => {
   return (
     <div className="card-emergency-container" id="naturopath">
+      <div className="container">
+        <h1 className="section-title">Naturopath</h1>
+
+        <div>
+          <p>
+            Welcome to our Naturopath section! Our naturopathic practitioners
+            offer holistic healthcare solutions that focus on natural remedies
+            and lifestyle modifications to support your health and well-being.
+            From herbal medicine to nutritional counseling, our team provides
+            personalized care to address your unique health concerns and help
+            you achieve optimal wellness.
+          </p>
+        </div>
+      </div>
+
       <article className="card-emergency-numbers">
         <img src="#" alt="card" />
         <div className="text-emergency">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            nesciunt?
-          </h2>
+          <h2>Mazatlan Alternative & Complementary Therapies</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam

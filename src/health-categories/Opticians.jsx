@@ -1,13 +1,24 @@
 const Opticians = () => {
   return (
     <div className="card-emergency-container" id="opticians">
+      <div className="container">
+        <h1 className="section-title">Opticians</h1>
+
+        <div>
+          <p>
+            Welcome to our Opticians section! Our opticians specialize in
+            providing expert eye care services, including vision testing,
+            eyeglass fittings, and contact lens consultations. With a commitment
+            to exceptional service and quality eyewear, we're here to help you
+            see clearly and look your best.
+          </p>
+        </div>
+      </div>
+
       <article className="card-emergency-numbers">
         <img src="#" alt="card" />
         <div className="text-emergency">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            nesciunt?
-          </h2>
+          <h2>Opticas Ver de Verdad</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam

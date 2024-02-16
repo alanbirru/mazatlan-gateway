@@ -1,13 +1,24 @@
 const Pediatrician = () => {
   return (
     <div className="card-emergency-container" id="pediatrician">
+      <div className="container">
+        <h1 className="section-title">Pediatricians</h1>
+
+        <div>
+          <p>
+            Welcome to our Pediatricians section! Our pediatricians specialize
+            in providing comprehensive medical care for infants, children, and
+            adolescents. With a focus on preventive care and developmental
+            milestones, our team is dedicated to promoting the health and
+            well-being of your child from infancy through adolescence.
+          </p>
+        </div>
+      </div>
+
       <article className="card-emergency-numbers">
         <img src="#" alt="card" />
         <div className="text-emergency">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            nesciunt?
-          </h2>
+          <h2>DR. JORGE FUENTEVILLA WHEATLEY</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam

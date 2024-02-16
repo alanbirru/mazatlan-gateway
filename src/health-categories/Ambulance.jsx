@@ -1,19 +1,25 @@
 const Ambulance = () => {
   return (
     <div className="card-emergency-container" id="ambulance">
+      <div className="container">
+        <h1 className="section-title">Ambulance</h1>
+
+        <div>
+          <p>
+            There is the State-run Ambulance service, and it will take you to a
+            State-run hospital. Call 911 Several privately owned hospitals have
+            their ambulance service. They are often quicker but will bring you
+            to their hospital only. Many of these will take medical insurance
+            but check to make sure!
+          </p>
+        </div>
+      </div>
+
       <article className="card-emergency-numbers">
         <img src="#" alt="card" />
         <div className="text-emergency">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            nesciunt?
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
-          </p>
+          <h2>Emergency Ambulance Service Mazatlan</h2>
+          <p></p>
 
           <span className="phone-number">1232323213</span>
           <button>click</button>

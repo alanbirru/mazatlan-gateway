@@ -1,5 +1,7 @@
+import "../src/css/footer.css";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return <footer className="footer">© Mazatlan Gateway 2023</footer>;
 };
 
 export default Footer;
