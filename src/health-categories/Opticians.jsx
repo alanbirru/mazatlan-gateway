@@ -20,10 +20,8 @@ const Opticians = () => {
         <div className="text-emergency">
           <h2>Opticas Ver de Verdad</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Leandro Valle # 312 between Benito Juarez and Aquiles Serdan Centro,
+            Mazatlan
           </p>
 
           <span className="phone-number">1232323213</span>

@@ -1,3 +1,5 @@
+import bicinentenarioClinic from "../assets/health-categories-images/400.jpg";
+
 const Clinics = () => {
   return (
     <div className="card-emergency-container" id="clinics">
@@ -16,7 +18,7 @@ const Clinics = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={bicinentenarioClinic} alt="card" />
         <div className="text-emergency">
           <h2>Mazatlan Bicentennial Medical Point Clinic</h2>
           <p>

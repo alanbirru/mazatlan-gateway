@@ -68,7 +68,7 @@ const EmergencyNumbers = () => {
     {
       title: "Cruz Roja",
       img: cruzRoja,
-      information: "F irst aid station, AV. Gral. Ignacio Zaragoza.",
+      information: "First aid station, AV. Gral. Ignacio Zaragoza.",
       number: "088",
       button: "Copy Phone",
       link: "https://www.cruzrojamexicana.org.mx/",

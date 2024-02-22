@@ -20,10 +20,8 @@ const Optometrists = () => {
         <div className="text-emergency">
           <h2>Opti-KLiniC</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Local B 2 LAGUNA PLAZA & BUSINESS CENTER, Av. Reforma 2007,
+            Flamingos, 82149 Mazatlán, Sin.
           </p>
 
           <span className="phone-number">1232323213</span>

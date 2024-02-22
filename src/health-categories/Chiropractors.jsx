@@ -1,3 +1,5 @@
+import stevenBackman from "../assets/health-categories-images/338.jpg";
+
 const Chiropractors = () => {
   return (
     <div className="card-emergency-container" id="chiropractors">
@@ -19,14 +21,20 @@ const Chiropractors = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={stevenBackman} alt="card" />
         <div className="text-emergency">
           <h2>DR. STEVEN BACKMAN, DC</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Dr, Backman specializes in health and wellness programs that are not
+            invasive and are designed to help your body heal itself without the
+            use of prescription drugs or surgery.
+          </p>
+
+          <p>
+            Our personnel are completely bilingual (English and Spanish) and are
+            dedicated to helping you reach optimal health. Our priority is to
+            bring relief to whatever pain or discomfort, whether it is a chronic
+            condition or a recent injury.
           </p>
 
           <span className="phone-number">1232323213</span>

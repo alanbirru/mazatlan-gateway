@@ -21,10 +21,8 @@ const Physiotherapy = () => {
         <div className="text-emergency">
           <h2>Quality & Life</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Rehab and Physical Therapy Belisario Dominquez 2310 Centro CP 82000
+            Mazatlan
           </p>
 
           <span className="phone-number">1232323213</span>

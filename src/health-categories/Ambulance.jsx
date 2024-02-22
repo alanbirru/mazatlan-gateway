@@ -1,3 +1,4 @@
+import emergencyAmbulance from "../assets/health-categories-images/300.jpg";
 const Ambulance = () => {
   return (
     <div className="card-emergency-container" id="ambulance">
@@ -16,7 +17,7 @@ const Ambulance = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={emergencyAmbulance} alt="card" />
         <div className="text-emergency">
           <h2>Emergency Ambulance Service Mazatlan</h2>
           <p></p>

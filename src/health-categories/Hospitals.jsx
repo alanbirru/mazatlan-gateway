@@ -19,7 +19,10 @@ const Hospitals = () => {
         <img src="#" alt="card" />
         <div className="text-emergency">
           <h2>City Hospital/ Medica De La Ciudad</h2>
-          <p>Blvd. Marina, Mazatlan # 2207, La Marina</p>
+          <p>
+            We are a private hospital providing healthcare, diagnosis, and
+            treatment of various diseases.
+          </p>
 
           <span className="phone-number">669 195 9195</span>
           <button>click</button>

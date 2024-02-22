@@ -1,3 +1,5 @@
+import draCeciliaRosa from "../assets/health-categories-images/530.jpg";
+
 const Dermatologists = () => {
   return (
     <div className="card-emergency-container" id="dermatologists">
@@ -15,18 +17,13 @@ const Dermatologists = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={draCeciliaRosa} alt="card" />
         <div className="text-emergency">
           <h2>Dra. Celia Rosa Tejeda Aguirre</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Specialist in: Skin Surgery, Skin Infections, Aesthetic Dermatology
+            Diseases Treated: Atopic dermatitis, allergies, Acne
           </p>
-
-          <span className="phone-number">1232323213</span>
-          <button>click</button>
 
           <a href="#" target="_blank">
             <button>Lorem ipsum dolor sit.</button>

@@ -1,3 +1,5 @@
+import drArturoBarros from "../assets/health-categories-images/401.jpg";
+
 const Dentists = () => {
   return (
     <div className="card-emergency-container" id="dentists">
@@ -16,7 +18,7 @@ const Dentists = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={drArturoBarros} alt="card" />
         <div className="text-emergency">
           <h2>Dr. Arturo Barros de Cima</h2>
           <p>

@@ -1,3 +1,5 @@
+import jorgeGarcia from "../assets/health-categories-images/503.jpg";
+
 const GeneralDoctors = () => {
   return (
     <div className="card-emergency-container" id="general-doctors">
@@ -16,7 +18,7 @@ const GeneralDoctors = () => {
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={jorgeGarcia} alt="card" />
         <div className="text-emergency">
           <h2>Dr Jorge Garcia De La Rosa</h2>
           <p>AV DEL MAR 80, PALOS PRIETOS, 82010 MAZATLAN, SIN</p>

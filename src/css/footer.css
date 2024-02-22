@@ -1,10 +1,53 @@
 .footer {
   margin-top: auto;
-  background-color: black;
   width: 100%;
   bottom: 0px;
   color: white;
   padding: 20px;
-  font-size: 23px;
+  font-size: 26px;
   text-align: center;
+  background-color: black;
+  font-weight: bold;
+}
+
+.facebook-icon,
+.instagram-icon,
+.x-icon,
+.youtube-icon {
+  color: rgb(126, 126, 126);
+  font-size: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover,
+.x-icon:hover,
+.youtube-icon:hover {
+  color: white;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .facebook-icon,
+  .instagram-icon,
+  .x-icon,
+  .youtube-icon {
+    font-size: 40px;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
 }

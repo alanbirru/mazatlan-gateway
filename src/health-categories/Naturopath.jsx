@@ -20,12 +20,7 @@ const Naturopath = () => {
         <img src="#" alt="card" />
         <div className="text-emergency">
           <h2>Mazatlan Alternative & Complementary Therapies</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
-          </p>
+          <p>Playa Dorado 15311, Valle Bonito 82136 Mazatlan, Sin</p>
 
           <span className="phone-number">1232323213</span>
           <button>click</button>

@@ -10,14 +10,23 @@
 #activities,
 #food,
 #health,
-#contact {
+#contact,
+#ambulance,
+#chiropractors,
+#clinics,
+#dentists,
+#dermatologists,
+general-doctors,
+#hospitals,
+#massage-and-nail-care,
+#naturopath {
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
 .container {
-  width: 90%; /* Adjust as needed */
-  max-width: 1030px; /* Adjust as needed */
+  width: 90%;
+  max-width: 1030px;
   padding: 20px;
   display: flex;
   flex-direction: column;
