@@ -77,7 +77,7 @@ const SectionRoutes = () => {
           <Route path="physiotherapy" element={<Physiotherapy />} />
           <Route path="opticians" element={<Opticians />} />
           <Route path="optometrists" element={<Optometrists />} />
-          <Route path="pharmacy" element={<Pharmacy />} />
+          <Route path="pharmacy" element={<Pharmacy />} />  
           <Route path="pediatrician" element={<Pediatrician />} />
         </Route>
 

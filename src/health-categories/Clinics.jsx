@@ -1,5 +1,6 @@
 import bicinentenarioClinic from "../assets/health-categories-images/400.jpg";
 
+
 const Clinics = () => {
   return (
     <div className="card-emergency-container" id="clinics">

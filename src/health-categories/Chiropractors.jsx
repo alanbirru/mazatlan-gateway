@@ -22,6 +22,7 @@ const Chiropractors = () => {
 
       <article className="card-emergency-numbers">
         <img src={stevenBackman} alt="card" />
+
         <div className="text-emergency">
           <h2>DR. STEVEN BACKMAN, DC</h2>
           <p>

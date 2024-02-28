@@ -1,3 +1,6 @@
+import guadalajara from "../assets/health-categories-images/Gudalahara.jpg";
+import similares from "../assets/health-categories-images/Similares.jpg";
+
 const Pharmacy = () => {
   return (
     <div className="card-emergency-container" id="pharmacy">
@@ -6,27 +9,37 @@ const Pharmacy = () => {
 
         <div>
           <p>
-            Welcome to our Pharmacy section! Our pharmacy offers a wide range of
-            prescription medications, over-the-counter remedies, and healthcare
-            products to meet your medical needs. With expert pharmacists and
-            personalized service, we're committed to providing convenient and
-            reliable healthcare solutions for you and your family.
+            In Mexico, there are two main types of pharmacies: "Farmacias
+            Similares" and traditional pharmacies.
           </p>
         </div>
       </div>
 
       <article className="card-emergency-numbers">
-        <img src="#" alt="card" />
+        <img src={guadalajara} alt="card" />
         <div className="text-emergency">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            nesciunt?
-          </h2>
+          <h2>Farmacia Guadalajara </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, debitis dignissimos? Neque corrupti quisquam aperiam
-            libero dolore soluta vitae non incidunt tempora corporis distinctio
-            suscipit, aspernatur aut nemo voluptatem? Reprehenderit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            eveniet at id nostrum, ducimus eum excepturi eos quod?
+          </p>
+
+          <span className="phone-number">1232323213</span>
+          <button>click</button>
+
+          <a href="#" target="_blank">
+            <button>Lorem ipsum dolor sit.</button>
+          </a>
+        </div>
+      </article>
+
+      <article className="card-emergency-numbers">
+        <img src={similares} alt="card" />
+        <div className="text-emergency">
+          <h2>Farmacia Similares</h2>
+          <p>
+            Farmacias Similares operates on a unique business model. They focus
+            on providing affordable generic medications and healthcare products.
           </p>
 
           <span className="phone-number">1232323213</span>

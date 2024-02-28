@@ -42,7 +42,7 @@ const HealthContainer = () => {
     { title: "Opticians", id: "opticians", image: opticiansImg },
     { title: "Optometrists", id: "optometrists", image: optometristImg },
     { title: "Pediatrician", id: "pediatrician", image: pedatricianImg },
-    { title: "Pharmacy", id: "pediatrician", image: pharmacyImg },
+    { title: "Pharmacy", id: "pharmacy", image: pharmacyImg },
     { title: "Physiotherapy", id: "physiotherapy", image: physiotherapyImg },
   ];
 
